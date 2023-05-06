@@ -1,0 +1,578 @@
+#!name=🍟 Fries: 🌐 DNS enhanced
+#!desc=1.域名按所属DNS进行分流解析 2.路由器地址使用系统DNS进行解析 3.特殊地址使用规范DNS进行解析
+#!author=VirgilClyne
+#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
+
+[Host]
+# > IPv6
+ip6-localhost = ::1
+ip6-loopback = ::1
+ip6-localnet = fe00::0
+ip6-mcastprefix = ff00::0
+ip6-allnodes = ff02::1
+ip6-allrouters = ff02::2
+ip6-allhosts = ff02::3
+
+# > Modify Contents
+# Firebase Cloud Messaging
+talk.google.com = 108.177.125.188
+mtalk.google.com = 108.177.125.188
+alt1-mtalk.google.com = 3.3.3.3
+alt2-mtalk.google.com = 3.3.3.3
+alt3-mtalk.google.com = 74.125.200.188
+alt4-mtalk.google.com = 74.125.200.188
+alt5-mtalk.google.com = 3.3.3.3
+alt6-mtalk.google.com = 3.3.3.3
+alt7-mtalk.google.com = 74.125.200.188
+alt8-mtalk.google.com = 3.3.3.3
+# Google CDN
+blog.google = server:119.29.29.29
+googletraveladservices.com = server:119.29.29.29
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+clientservices.googleapis.com = server:119.29.29.29
+update.googleapis.com = server:119.29.29.29
+translate.googleapis.com = server:119.29.29.29
+fonts.googleapis.com = server:119.29.29.29
+fonts.gstatic.com = server:119.29.29.29
+# Google STUN
+stun.l.google.com = server:system
+stun1.l.google.com = server:system
+stun2.l.google.com = server:system
+stun3.l.google.com = server:system
+stun4.l.google.com = server:system
+
+# > Router Admin Panel
+# Ubiquiti Unifi Network App
+*.id.ui.direct = server:system
+# Ubiquiti Unifi Portal
+# unifi.ui.com = server:system
+# Ubiquiti Unifi OS
+unifi.local = server:system
+# Ubiquiti Unifi Controller
+# network.unifi.ui.com = server:system
+# Ubiquiti Amplifi Router
+amplifi.lan = server:system
+# Synology Router
+router.synology.com = server:system
+# Razer Sila Router
+sila.razer.com = server:system
+# Asus Router
+router.asus.com = server:system
+# Netgear Router
+routerlogin.net = server:system
+# Netgear Obri Router
+orbilogin.com = server:system
+# Linksys Router
+www.LinksysSmartWiFi.com = server:system
+LinksysSmartWiFi.com = server:system
+myrouter.local = server:system
+# Aurba Router
+instant.arubanetworks.com = server:system
+setmeup.arubanetworks.com = server:system
+# 小米 Mi WiFi Router
+www.miwifi.com = server:system
+miwifi.com = server:system
+# 华为 Huawei Router
+mediarouter.home = server:system
+# TP-Link Router
+tplogin.cn = server:system
+tplinklogin.net = server:system
+tplinkwifi.net = server:system
+# 水星 MERCURY Router
+melogin.cn = server:system
+# 迅捷 FAST Router
+falogin.cn = server:system
+# 腾达 Tenda Router
+tendawifi.com = server:system
+# 磊科 Netcore Router
+leike.cc = server:system
+# 中兴 ZTE Router
+zte.home = server:system
+# 斐讯 PHICOMM Router
+p.to = server:system
+phicomm.me = server:system
+# 极路由 HiWiFi Router
+hiwifi.com = server:system
+# 迅雷路由
+peiluyou.com = server:system
+# M2M routers at MiFi Hotspot
+_hotspot_.m2m = server:system
+# csl Wi-Fi
+hotspot.cslwifi.com = server:system
+
+# > Apple
+networking.apple = server:https://doh.dns.apple.com/dns-query
+# Apple.com
+*.apple.com = server:https://doh.dns.apple.com/dns-query
+# iCloud.com
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
+
+# > Alphabet
+*.google = server:https://dns.google/dns-query
+*.google.com = server:https://dns.google/dns-query
+*.google.com.?? = server:https://dns.google/dns-query
+# Google sites
+*.goog = server:https://dns.google/dns-query
+# Google 静态资源
+*.gstatic.com = server:https://dns.google/dns-query
+# Google Photos
+*.ggpht.com = server:https://dns.google/dns-query
+# Google 用户上传数据
+*.googleusercontent.com = server:https://dns.google/dns-query
+# Google APIs
+*.googleapis.com = server:https://dns.google/dns-query
+# Google backbone
+*.1e100.net = server:https://dns.google/dns-query
+# Youtube sites
+*.youtube = server:https://dns.google/dns-query
+# Youtube
+*.youtube.com = server:https://dns.google/dns-query
+# Youtube 图片
+*.ytimg.com = server:https://dns.google/dns-query
+# Youtube Video
+*.googlevideo.com = server:https://dns.google/dns-query
+# Google Video Thumbnails
+*.gvt?.com = server:https://dns.google/dns-query
+# reCaptcha
+*.recaptcha.net = server:https://dns.google/dns-query
+# Gmail
+*.gmail.com = server:https://dns.google/dns-query
+# Google Source
+*.googlesource.com = server:https://dns.google/dns-query
+# Google AD Services
+*.googleadservices.com = server:https://dns.google/dns-query
+# DoubleClick
+*.doubleclick.net = server:https://dns.google/dns-query
+# AdSense
+*.adsense.com = server:https://dns.google/dns-query
+# AdSense Custom Search Ads
+*.adsensecustomsearchads.com = server:https://dns.google/dns-query
+# AdSense for mobile apps
+*.adsenseformobileapps.com = server:https://dns.google/dns-query
+# Google shortened URLs
+*.gle = server:https://dns.google/dns-query
+# Google URL Shortener
+goo.gl = server:https://dns.google/dns-query
+
+# > Cloudflare
+*.cloudflare.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Stream
+*.cloudflarestream.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Client
+*.cloudflareclient.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Web Analytics
+*.cloudflareinsights.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare 1.1.1.1
+*.every1dns.net = server:https://cloudflare-dns.com/dns-query
+# Cloudflare SSL Certificate*.cloudflaressl.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare DNS
+*.cloudflare-dns.com = server:https://cloudflare-dns.com/dns-query
+# CloudFlare Workers
+*.workers.dev = server:https://cloudflare-dns.com/dns-query
+
+# > 阿里巴巴
+*.alibaba.cn = server:https://dns.alidns.com/dns-query
+*.alibaba.com.cn = server:https://dns.alidns.com/dns-query
+# Alibaba 中国
+*.china.alibaba.com = server:https://dns.alidns.com/dns-query
+# 1688
+*.1688.com = server:https://dns.alidns.com/dns-query
+# 淘宝
+*.taobao.com = server:https://dns.alidns.com/dns-query
+# 淘宝 缓存
+*.tbcache.com = server:https://dns.alidns.com/dns-query
+# 天猫
+*.tmall.com = server:https://dns.alidns.com/dns-query
+# 阿里 CDN
+*.alicdn.com = server:https://dns.alidns.com/dns-query
+# 阿里昆仑
+*.alikunlun.com = server:https://dns.alidns.com/dns-query
+# 云引擎应用平台
+*.aliapp.com = server:https://dns.alidns.com/dns-query
+# 上云平台
+*.aliapp.org = server:https://dns.alidns.com/dns-query
+# 阿里用户上传资料
+*.alibabausercontent.com = server:https://dns.alidns.com/dns-query
+# mmstat 数据统计 广告追踪
+*.mmstat.com = server:https://dns.alidns.com/dns-query
+# 淘宝短网址
+tb.cn = server:https://dns.alidns.com/dns-query
+
+# > 阿里云
+# 阿里云
+*.aliyun.* = server:https://dns.alidns.com/dns-query
+# 阿里云 CDN
+*.aliyuncdn.* = server:https://dns.alidns.com/dns-query
+# 阿里云 API 服务
+*.aliyuncs.com = server:https://dns.alidns.com/dns-query
+# 阿里云 DDoS防护
+*.aliyunddos????.com = server:https://dns.alidns.com/dns-query
+# 阿里云盘
+*.aliyundrive.com = server:https://dns.alidns.com/dns-query
+# 阿里云盾
+*.aliyundun.com = server:https://dns.alidns.com/dns-query
+# 阿里云盾 Web 应用防火墙
+*.aliyundunwaf.com = server:https://dns.alidns.com/dns-query
+# 阿里云 内部
+*.aliyun-inc.com = server:https://dns.alidns.com/dns-query
+
+# > 蚂蚁集团
+*.antgroup.com = server:https://dns.alidns.com/dns-query
+# 蚂蚁金服
+*.antfin.com = server:https://dns.alidns.com/dns-query
+*.antfinancial.com = server:https://dns.alidns.com/dns-query
+# 支付宝
+*.alipay.com = server:https://dns.alidns.com/dns-query
+*.alipay.com.cn = server:https://dns.alidns.com/dns-query
+# 支付宝 HTTP DNS
+*.alipaydns.com = server:https://dns.alidns.com/dns-query
+# 支付宝 商家资源
+*.alipayeshop.com = server:https://dns.alidns.com/dns-query
+# 支付宝 Mdap
+*.alipaylog.com = server:https://dns.alidns.com/dns-query
+# 支付宝 静态资源
+*.alipayobjects.com = server:https://dns.alidns.com/dns-query
+# 支付宝 开放技术生态体系
+*.alipay-eco.com = server:https://dns.alidns.com/dns-query
+
+# > 腾讯
+*.tencent.com = server:https://doh.pub/dns-query
+# 腾讯云
+*.qcloud.com = server:https://doh.pub/dns-query
+# 腾讯云CDN
+*.qcloudcdn.cn = server:https://doh.pub/dns-query
+*.qcloudcdn.com = server:https://doh.pub/dns-query
+# 腾讯云对象储存
+*.qcloudcos.com = server:https://doh.pub/dns-query
+# 腾讯云静态资源
+*.qcloudimg.com = server:https://doh.pub/dns-query
+# 腾讯云超级管家
+*.qcloudcjgj.com = server:https://doh.pub/dns-query
+# 腾讯云网站管家
+*.qcloudwzgj.com = server:https://doh.pub/dns-query
+# 腾讯云主页管家
+*.qcloudzygj.com = server:https://doh.pub/dns-query
+# 腾讯开放云
+*.myqcloud.com = server:https://doh.pub/dns-query
+# 腾讯云
+*.tencent-cloud.net = server:https://doh.pub/dns-query
+# 腾讯云aiot解决方案
+*.tencentcloud-aiot.com = server:https://doh.pub/dns-query
+# 腾讯云API
+*.tencentcloudapi.com = server:https://doh.pub/dns-query
+# 腾讯云容器镜像服务TCR
+*.tencentcloudcr.com = server:https://doh.pub/dns-query
+# 腾讯云云市场
+*.tencentcloudmarket.com = server:https://doh.pub/dns-query
+# QQ
+*.qq.com = server:https://doh.pub/dns-query
+# 腾讯头像
+*.qlogo.cn = server:https://doh.pub/dns-query
+# 腾讯图片
+*.qpic.cn = server:https://doh.pub/dns-query
+# 微信
+*.weixin.qq.com = server:https://doh.pub/dns-query
+*.wx.qq.com = server:https://doh.pub/dns-query
+*.weixin.com = server:https://doh.pub/dns-query
+# 微信公众平台
+*.weixinbridge.com = server:https://doh.pub/dns-query
+# WeChat
+*.wechat.com = server:https://doh.pub/dns-query
+# 微信小程序
+*.servicewechat.com = server:https://doh.pub/dns-query
+# 微云
+*.weiyun.com = server:https://doh.pub/dns-query
+# 腾讯 图片 静态资源
+*.gtimg.cn = server:https://doh.pub/dns-query
+*.idqqimg.com = server:https://doh.pub/dns-query
+# 腾讯 静态资源 CDN
+*.cdn-go.cn = server:https://doh.pub/dns-query
+# 腾讯云 智能云解析DNS
+*.smtcdns.com = server:https://doh.pub/dns-query
+*.smtcdns.net = server:https://doh.pub/dns-query
+# 腾讯短网址
+url.cn = server:https://doh.pub/dns-query
+
+# > 百度
+*.baidu = server:180.76.76.76
+*.baidu.com = server:180.76.76.76
+# 百度 静态资源
+*.bdimg.com = server:180.76.76.76
+*.bdstatic.com = server:180.76.76.76
+# 百度网盘
+*.baidupcs.* = server:180.76.76.76
+# 百度云CDN
+*.baiduyuncdn.* = server:180.76.76.76
+# 百度云DNS
+*.baiduyundns.* = server:180.76.76.76
+# 百度云 DNS
+*.bdydns.* = server:180.76.76.76
+# 百度云 CDN
+*.bdycdn.* = server:180.76.76.76
+# 百度云 域名
+*.bdysite.com = server:180.76.76.76
+*.bdysites.com = server:180.76.76.76
+# 百度智能云
+*.baidubce.* = server:180.76.76.76
+# 百度智能云 DNS
+*.bcedns.* = server:180.76.76.76
+# 百度智能云 对象存储BOS
+*.bcebos.com = server:180.76.76.76
+# 百度智能云 播放器服务
+*.bcevod.com = server:180.76.76.76
+# 百度智能云 图片服务
+*.bceimg.com = server:180.76.76.76
+# 百度智能云 主机
+*.bcehost.com = server:180.76.76.76
+*.bcehosts.com = server:180.76.76.76
+# 百度短网址
+dwz.cn = server:180.76.76.76
+
+# > 360
+# 360安全中心
+*.360.cn = server:https://doh.360.cn/dns-query
+# 360安全卫士
+*.360safe.com = server:https://doh.360.cn/dns-query
+# 360快资讯
+*.360kuai.com = server:https://doh.360.cn/dns-query
+# 360搜索
+*.so.com = server:https://doh.360.cn/dns-query
+# 360网页快照服务
+*.360webcache.com = server:https://doh.360.cn/dns-query
+# 奇虎api
+*.qihuapi.com = server:https://doh.360.cn/dns-query
+# 360图床
+*.qhimg.com = server:https://doh.360.cn/dns-query
+*.qhimgs.com = server:https://doh.360.cn/dns-query
+*.qhimgs?.com = server:https://doh.360.cn/dns-query
+# 360
+*.qhmsg.com = server:https://doh.360.cn/dns-query
+# 奇虎静态资源
+*.qhres.com = server:https://doh.360.cn/dns-query
+*.qhres?.com = server:https://doh.360.cn/dns-query
+# 导航静态文件
+*.dhrest.com = server:https://doh.360.cn/dns-query
+# 360
+*.qhupdate.com = server:https://doh.360.cn/dns-query
+# 360安全云盘
+*.yunpan.cn = server:https://doh.360.cn/dns-query
+*.yunpan.com.cn = server:https://doh.360.cn/dns-query
+*.yunpan.com = server:https://doh.360.cn/dns-query
+# 360短网址
+urlqh.cn = server:https://doh.360.cn/dns-query
+
+# > BiliBili
+*.bilibili.com = server:system
+# BiliBili API
+*.biliapi.com = server:system
+*.biliapi.net = server:system
+# BiliBili CDN
+*.bilicdn?.com = server:system
+# BiliBili 静态资源
+*.hdslb.com = server:system
+*.hdslb.net = server:system
+# BiliBili 视频
+cn-hk-eq-bcache-??.bilivideo.com = server:system
+# BiliBili upos视频服务器（akamai）
+upos-hz-mirrorakam.akamaized.net = server:system
+# BiliBili upos视频服务器（asia-abroad.com）
+upos-sz-mirrorasiaov.bilibilivideo.com = server:system
+# BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorali.bilivideo.com = server:https://dns.alidns.com/dns-query
+upos-sz-mirrorali?.bilivideo.com = server:https://dns.alidns.com/dns-query
+upos-sz-mirrorali??.bilivideo.com = server:https://dns.alidns.com/dns-query
+# BiliBili upos视频服务器（百度云）
+upos-sz-mirrorbos.bilivideo.com = server:180.76.76.76
+# BiliBili upos视频服务器（腾讯云）
+upos-sz-mirrorcos.bilivideo.com = server:https://doh.pub/dns-query
+upos-sz-mirrorcos?.bilivideo.com = server:https://doh.pub/dns-query
+upos-sz-mirrorcos??.bilivideo.com = server:https://doh.pub/dns-query
+# BiliBili upos视频服务器（华为云）
+upos-sz-mirrorhw.bilivideo.com = server:system
+upos-sz-mirrorhw?.bilivideo.com = server:system
+upos-sz-mirrorhwo?.bilivideo.com = server:system
+# BiliBili upos视频服务器（金山云）
+upos-sz-mirrorks3.bilivideo.com = server:system
+upos-sz-mirrorks3?.bilivideo.com = server:system
+# BiliBili upos视频服务器（七牛云）
+upos-sz-mirrorkodo.bilivideo.com = server:system
+upos-sz-mirrorkodo?.bilivideo.com = server:system
+# BiliBili upos视频服务器（网宿）
+upos-sz-mirrorwcs.bilivideo.com = server:system
+upos-sz-mirrorwcs?.bilivideo.com = server:system
+# BiliBili upos视频服务器（迅雷）
+upos-sz-mirrorxycdn.bilivideo.com = server:system
+# BiliBili upos视频服务器（百度云）
+upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
+# BiliBili upos视频服务器
+upos-sz-upcdnhw.bilivideo.com = server:system
+# BiliBili upos视频服务器（腾讯云）
+upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
+# BiliBili upos视频服务器
+upos-sz-upcdnws.bilivideo.com = server:system
+upos-tf-all-js.bilivideo.com = server:system
+# BiliBili mCDN视频服务器
+*.mcdn.bilivideo.com = server:system
+# BiliBili 视频
+*.bilivideo.com = server:system
+*.bilivideo.cn = server:system
+# BiliBili短网址
+acg.tv = server:system
+
+# > 京东
+*.jd.com = server:system
+# 京东 静态资源
+*.360buyimg.com = server:system
+# 京东云
+*.jdcloud.com = server:system
+# 京东云 缓存和存储
+*.jcloudstatic.com = server:system
+# 京东云 静态资源
+*.jcloudstatic.net = server:system
+# 京东云 全局负载均衡
+*.jdgslb.com = server:system
+# 京东短网址
+3.cn = server:system
+
+# > 🇨🇳 CN
+# CNNIC SDNS
+# 中国政府网
+# *.gov.cn = server:1.2.4.8
+# *.政务 = server:1.2.4.8
+
+# > 🇭🇰 HK
+# PCCW Enterprises Limited
+# *.pccw.com = server:dns1.pccw.com
+# 1O1O
+# *.1010.com.hk = server:dns1.pccw.com
+# csl.
+# *.hkcsl.com = server:dns1.pccw.com
+# The CLUB by HKT
+# *.theclub.com.hk = server:dns1.pccw.com
+# now.com
+# *.now.com = server:dns2.pccw.com
+# Now E
+# *.nowe.com = server:dns2.pccw.com
+# Now TV
+# *.now-tv.com = server:dns2.pccw.com
+# MOOV
+# *.moov.hk = server:dns3.pccw.com
+# viu
+# *.viu.com = server:dns3.pccw.com
+# viu tv
+# *.viu.tv = server:dns3.pccw.com
+# Hong Kong Cable Television Limited
+# *.hkcable.com.hk = server:dns1.hkcable.com.hk
+# i-CABLE
+# *.i-cable.com = server:dns2.hkcable.com.hk
+# CABLE TV Service
+# *.cabletv.com.hk = server:dns2.hkcable.com.hk
+# KDDI Hong Kong Limited
+# *.hk.kddi.com = server:apple.kdd.net.hk
+
+# > 🇹🇼 TW
+# 中华电信
+*.cht.com.tw  = server:https://dns.hinet.net/dns-query
+# 中华电信HiNet
+*.hinet.net = server:https://dns.hinet.net/dns-query
+# 中华电信emome
+*.emome.net = server:https://dns.hinet.net/dns-query
+# So-net Entertainment Taiwan
+# so-net.net.tw = server:ns1.so-net.net.tw
+# so-net.tw = server:ns1.so-net.net.tw
+# Taiwan Network Information Center
+*.tw = server:https://dns.twnic.tw/dns-query
+*.taipei = server:https://dns.twnic.tw/dns-query
+
+# > 🇺🇸 US
+# Hurricane Electric
+*.he.net = server:https://ordns.he.net/dns-query
+
+
+# >中国电信
+*.01058511989.com=server:222.246.129.80
+*.10000.gd.cn=server:222.246.129.80
+*.189.cn=server:222.246.129.80
+*.189jk.cn=server:222.246.129.80
+*.189qas.com=server:222.246.129.80
+*.21cn.com=server:222.246.129.80
+*.21cn.net=server:222.246.129.80
+*.21cnentmail.com=server:222.246.129.80
+*.21cnimg.com=server:222.246.129.80
+*.21cnsales.com=server:222.246.129.80
+*.360sides.cn=server:222.246.129.80
+*.360sides.com=server:222.246.129.80
+*.360sides.net=server:222.246.129.80
+*.4008100800.com=server:222.246.129.80
+*.8009900800.com=server:222.246.129.80
+*.bnet.cn=server:222.246.129.80
+*.chinabnet.cn=server:222.246.129.80
+*.chinatelecom-h.com=server:222.246.129.80
+*.chinatelecom.cn=server:222.246.129.80
+*.chinatelecom.com.cn=server:222.246.129.80
+*.chinatelecom.net.cn=server:222.246.129.80
+*.chinatelecom.org.cn=server:222.246.129.80
+*.chinatelecomglobal.com=server:222.246.129.80
+*.chntel.com=server:222.246.129.80
+*.ctcdn.cn=server:222.246.129.80
+*.ctcdn.com=server:222.246.129.80
+*.ctcdn.com.cn=server:222.246.129.80
+*.ctcdn.net=server:222.246.129.80
+*.ctcdn.org = server:222.246.129.80
+*.ctdns.cn=server:222.246.129.80
+*.ctdns.com.cn=server:222.246.129.80
+*.ctdns.net=server:222.246.129.80
+*.ctdns.org = server:222.246.129.80
+*.ctexcel.ca = server:222.246.129.80
+*.ctexcel.com=server:222.246.129.80
+*.ctexcel.com.hk = server:222.246.129.80
+*.ctexcel.fr.hk = server:222.246.129.80
+*.ctexcel.us = server:222.246.129.80
+*.cthcdn.cn=server:222.246.129.80
+*.cthcdn.com=server:222.246.129.80
+*.cthcdn.net=server:222.246.129.80
+*.ctid.com.cn=server:222.246.129.80
+*.ctlcdn.cn=server:222.246.129.80
+*.ctlcdn.com=server:222.246.129.80
+*.ctlcdn.net=server:222.246.129.80
+*.ctmcdn.cn=server:222.246.129.80
+*.ctmcdn.com=server:222.246.129.80
+*.ctmcdn.net=server:222.246.129.80
+*.ctrdc.com.cn=server:222.246.129.80
+*.ctxcdn.cn=server:222.246.129.80
+*.ctxcdn.com=server:222.246.129.80
+*.ctxcdn.net=server:222.246.129.80
+*.ctycdn.cn=server:222.246.129.80
+*.ctycdn.com=server:222.246.129.80
+*.ctycdn.net=server:222.246.129.80
+*.ctycdn.net.cn=server:222.246.129.80
+*.ctycdn.org = server:222.246.129.80
+*.ctyun.cn=server:222.246.129.80
+*.ctyun.com.cn=server:222.246.129.80
+*.ctyunapi.cn=server:222.246.129.80
+*.ctyunbdcsc.cn=server:222.246.129.80
+*.ctyuncdn.cn=server:222.246.129.80
+*.ctyuncdn.com=server:222.246.129.80
+*.ctyuncdn.net=server:222.246.129.80
+*.ctzcdn.cn=server:222.246.129.80
+*.ctzcdn.com=server:222.246.129.80
+*.ctzcdn.net=server:222.246.129.80
+*.gd12349.com.cn=server:222.246.129.80
+*.gdbnet.cn=server:222.246.129.80
+*.gddc.com.cn=server:222.246.129.80
+*.gdtel.com.cn=server:222.246.129.80
+*.go189.cn = server:222.246.129.80
+*.guangzhou.gd.cn=server:222.246.129.80
+*.id6.me = server:222.246.129.80
+*.iptv.gd.cn=server:222.246.129.80
+*.iwuyou189.cn=server:222.246.129.80
+*.iwuyou189.com=server:222.246.129.80
+*.pzclub.cn=server:222.246.129.80
+*.szny189.com=server:222.246.129.80
+*.vnet.cn=server:222.246.129.80
+*.wuyou189.cn=server:222.246.129.80
+*.wuyou189.com=server:222.246.129.80
+*.ycy100.cn=server:222.246.129.80
+*.yichuangyun.com.cn=server:222.246.129.80
