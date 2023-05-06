@@ -45,11 +45,11 @@ stun4.l.google.com = server:system
 # Ubiquiti Unifi Network App
 *.id.ui.direct = server:system
 # Ubiquiti Unifi Portal
-# unifi.ui.com = server:system
+unifi.ui.com = server:system
 # Ubiquiti Unifi OS
 unifi.local = server:system
 # Ubiquiti Unifi Controller
-# network.unifi.ui.com = server:system
+network.unifi.ui.com = server:system
 # Ubiquiti Amplifi Router
 amplifi.lan = server:system
 # Synology Router
@@ -164,7 +164,8 @@ goo.gl = server:https://dns.google/dns-query
 *.cloudflareinsights.com = server:https://cloudflare-dns.com/dns-query
 # Cloudflare 1.1.1.1
 *.every1dns.net = server:https://cloudflare-dns.com/dns-query
-# Cloudflare SSL Certificate*.cloudflaressl.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare SSL Certificate
+*.cloudflaressl.com = server:https://cloudflare-dns.com/dns-query
 # Cloudflare DNS
 *.cloudflare-dns.com = server:https://cloudflare-dns.com/dns-query
 # CloudFlare Workers
@@ -437,38 +438,38 @@ acg.tv = server:system
 # > 🇨🇳 CN
 # CNNIC SDNS
 # 中国政府网
-# *.gov.cn = server:1.2.4.8
-# *.政务 = server:1.2.4.8
+*.gov.cn = server:1.2.4.8
+*.政务 = server:1.2.4.8
 
 # > 🇭🇰 HK
 # PCCW Enterprises Limited
-# *.pccw.com = server:dns1.pccw.com
+*.pccw.com = server:dns1.pccw.com
 # 1O1O
-# *.1010.com.hk = server:dns1.pccw.com
+*.1010.com.hk = server:dns1.pccw.com
 # csl.
-# *.hkcsl.com = server:dns1.pccw.com
+*.hkcsl.com = server:dns1.pccw.com
 # The CLUB by HKT
-# *.theclub.com.hk = server:dns1.pccw.com
+*.theclub.com.hk = server:dns1.pccw.com
 # now.com
-# *.now.com = server:dns2.pccw.com
+*.now.com = server:dns2.pccw.com
 # Now E
-# *.nowe.com = server:dns2.pccw.com
+*.nowe.com = server:dns2.pccw.com
 # Now TV
-# *.now-tv.com = server:dns2.pccw.com
+*.now-tv.com = server:dns2.pccw.com
 # MOOV
-# *.moov.hk = server:dns3.pccw.com
+*.moov.hk = server:dns3.pccw.com
 # viu
-# *.viu.com = server:dns3.pccw.com
+*.viu.com = server:dns3.pccw.com
 # viu tv
-# *.viu.tv = server:dns3.pccw.com
+*.viu.tv = server:dns3.pccw.com
 # Hong Kong Cable Television Limited
-# *.hkcable.com.hk = server:dns1.hkcable.com.hk
+*.hkcable.com.hk = server:dns1.hkcable.com.hk
 # i-CABLE
-# *.i-cable.com = server:dns2.hkcable.com.hk
+*.i-cable.com = server:dns2.hkcable.com.hk
 # CABLE TV Service
-# *.cabletv.com.hk = server:dns2.hkcable.com.hk
+*.cabletv.com.hk = server:dns2.hkcable.com.hk
 # KDDI Hong Kong Limited
-# *.hk.kddi.com = server:apple.kdd.net.hk
+*.hk.kddi.com = server:apple.kdd.net.hk
 
 # > 🇹🇼 TW
 # 中华电信
@@ -478,8 +479,8 @@ acg.tv = server:system
 # 中华电信emome
 *.emome.net = server:https://dns.hinet.net/dns-query
 # So-net Entertainment Taiwan
-# so-net.net.tw = server:ns1.so-net.net.tw
-# so-net.tw = server:ns1.so-net.net.tw
+so-net.net.tw = server:ns1.so-net.net.tw
+so-net.tw = server:ns1.so-net.net.tw
 # Taiwan Network Information Center
 *.tw = server:https://dns.twnic.tw/dns-query
 *.taipei = server:https://dns.twnic.tw/dns-query
@@ -489,88 +490,89 @@ acg.tv = server:system
 *.he.net = server:https://ordns.he.net/dns-query
 
 
-# >中国电信
-*.01058511989.com=server:222.246.129.80
-*.10000.gd.cn=server:222.246.129.80
-*.189.cn=server:222.246.129.80
-*.189jk.cn=server:222.246.129.80
-*.189qas.com=server:222.246.129.80
-*.21cn.com=server:222.246.129.80
-*.21cn.net=server:222.246.129.80
-*.21cnentmail.com=server:222.246.129.80
-*.21cnimg.com=server:222.246.129.80
-*.21cnsales.com=server:222.246.129.80
-*.360sides.cn=server:222.246.129.80
-*.360sides.com=server:222.246.129.80
-*.360sides.net=server:222.246.129.80
-*.4008100800.com=server:222.246.129.80
-*.8009900800.com=server:222.246.129.80
-*.bnet.cn=server:222.246.129.80
-*.chinabnet.cn=server:222.246.129.80
-*.chinatelecom-h.com=server:222.246.129.80
-*.chinatelecom.cn=server:222.246.129.80
-*.chinatelecom.com.cn=server:222.246.129.80
-*.chinatelecom.net.cn=server:222.246.129.80
-*.chinatelecom.org.cn=server:222.246.129.80
-*.chinatelecomglobal.com=server:222.246.129.80
-*.chntel.com=server:222.246.129.80
-*.ctcdn.cn=server:222.246.129.80
-*.ctcdn.com=server:222.246.129.80
-*.ctcdn.com.cn=server:222.246.129.80
-*.ctcdn.net=server:222.246.129.80
+#>中国电信
+*.01058511989.com = server:222.246.129.80
+*.10000.gd.cn = server:222.246.129.80
+*.189.cn = server:222.246.129.80
+*.189jk.cn = server:222.246.129.80
+*.189qas.com = server:222.246.129.80
+*.21cn.com = server:222.246.129.80
+*.21cn.net = server:222.246.129.80
+*.21cnentmail.com = server:222.246.129.80
+*.21cnimg.com = server:222.246.129.80
+*.21cnsales.com = server:222.246.129.80
+*.360sides.cn = server:222.246.129.80
+*.360sides.com = server:222.246.129.80
+*.360sides.net = server:222.246.129.80
+*.4008100800.com = server:222.246.129.80
+*.8009900800.com = server:222.246.129.80
+*.bnet.cn = server:222.246.129.80
+*.chinabnet.cn = server:222.246.129.80
+*.chinatelecom-h.com = server:222.246.129.80
+*.chinatelecom.cn = server:222.246.129.80
+*.chinatelecom.com.cn = server:222.246.129.80
+*.chinatelecom.net.cn = server:222.246.129.80
+*.chinatelecom.org.cn = server:222.246.129.80
+*.chinatelecomglobal.com = server:222.246.129.80
+*.chntel.com = server:222.246.129.80
+*.ctcdn.cn = server:222.246.129.80
+*.ctcdn.com = server:222.246.129.80
+*.ctcdn.com.cn = server:222.246.129.80
+*.ctcdn.net = server:222.246.129.80
 *.ctcdn.org = server:222.246.129.80
-*.ctdns.cn=server:222.246.129.80
-*.ctdns.com.cn=server:222.246.129.80
-*.ctdns.net=server:222.246.129.80
+*.ctdns.cn = server:222.246.129.80
+*.ctdns.com.cn = server:222.246.129.80
+*.ctdns.net = server:222.246.129.80
 *.ctdns.org = server:222.246.129.80
 *.ctexcel.ca = server:222.246.129.80
-*.ctexcel.com=server:222.246.129.80
+*.ctexcel.com = server:222.246.129.80
 *.ctexcel.com.hk = server:222.246.129.80
 *.ctexcel.fr.hk = server:222.246.129.80
 *.ctexcel.us = server:222.246.129.80
-*.cthcdn.cn=server:222.246.129.80
-*.cthcdn.com=server:222.246.129.80
-*.cthcdn.net=server:222.246.129.80
-*.ctid.com.cn=server:222.246.129.80
-*.ctlcdn.cn=server:222.246.129.80
-*.ctlcdn.com=server:222.246.129.80
-*.ctlcdn.net=server:222.246.129.80
-*.ctmcdn.cn=server:222.246.129.80
-*.ctmcdn.com=server:222.246.129.80
-*.ctmcdn.net=server:222.246.129.80
-*.ctrdc.com.cn=server:222.246.129.80
-*.ctxcdn.cn=server:222.246.129.80
-*.ctxcdn.com=server:222.246.129.80
-*.ctxcdn.net=server:222.246.129.80
-*.ctycdn.cn=server:222.246.129.80
-*.ctycdn.com=server:222.246.129.80
-*.ctycdn.net=server:222.246.129.80
-*.ctycdn.net.cn=server:222.246.129.80
+*.cthcdn.cn = server:222.246.129.80
+*.cthcdn.com = server:222.246.129.80
+*.cthcdn.net = server:222.246.129.80
+*.ctid.com.cn = server:222.246.129.80
+*.ctlcdn.cn = server:222.246.129.80
+*.ctlcdn.com = server:222.246.129.80
+*.ctlcdn.net = server:222.246.129.80
+*.ctmcdn.cn = server:222.246.129.80
+*.ctmcdn.com = server:222.246.129.80
+*.ctmcdn.net = server:222.246.129.80
+*.ctrdc.com.cn = server:222.246.129.80
+*.ctxcdn.cn = server:222.246.129.80
+*.ctxcdn.com = server:222.246.129.80
+*.ctxcdn.net = server:222.246.129.80
+*.ctycdn.cn = server:222.246.129.80
+*.ctycdn.com = server:222.246.129.80
+*.ctycdn.net = server:222.246.129.80
+*.ctycdn.net.cn = server:222.246.129.80
 *.ctycdn.org = server:222.246.129.80
-*.ctyun.cn=server:222.246.129.80
-*.ctyun.com.cn=server:222.246.129.80
-*.ctyunapi.cn=server:222.246.129.80
-*.ctyunbdcsc.cn=server:222.246.129.80
-*.ctyuncdn.cn=server:222.246.129.80
-*.ctyuncdn.com=server:222.246.129.80
-*.ctyuncdn.net=server:222.246.129.80
-*.ctzcdn.cn=server:222.246.129.80
-*.ctzcdn.com=server:222.246.129.80
-*.ctzcdn.net=server:222.246.129.80
-*.gd12349.com.cn=server:222.246.129.80
-*.gdbnet.cn=server:222.246.129.80
-*.gddc.com.cn=server:222.246.129.80
-*.gdtel.com.cn=server:222.246.129.80
+*.ctyun.cn = server:222.246.129.80
+*.ctyun.com.cn = server:222.246.129.80
+*.ctyunapi.cn = server:222.246.129.80
+*.ctyunbdcsc.cn = server:222.246.129.80
+*.ctyuncdn.cn = server:222.246.129.80
+*.ctyuncdn.com = server:222.246.129.80
+*.ctyuncdn.net = server:222.246.129.80
+*.ctzcdn.cn = server:222.246.129.80
+*.ctzcdn.com = server:222.246.129.80
+*.ctzcdn.net = server:222.246.129.80
+*.gd12349.com.cn = server:222.246.129.80
+*.gdbnet.cn = server:222.246.129.80
+*.gddc.com.cn = server:222.246.129.80
+*.gdtel.com.cn = server:222.246.129.80
 *.go189.cn = server:222.246.129.80
-*.guangzhou.gd.cn=server:222.246.129.80
+*.guangzhou.gd.cn = server:222.246.129.80
 *.id6.me = server:222.246.129.80
-*.iptv.gd.cn=server:222.246.129.80
-*.iwuyou189.cn=server:222.246.129.80
-*.iwuyou189.com=server:222.246.129.80
-*.pzclub.cn=server:222.246.129.80
-*.szny189.com=server:222.246.129.80
-*.vnet.cn=server:222.246.129.80
-*.wuyou189.cn=server:222.246.129.80
-*.wuyou189.com=server:222.246.129.80
-*.ycy100.cn=server:222.246.129.80
-*.yichuangyun.com.cn=server:222.246.129.80
+*.iptv.gd.cn = server:222.246.129.80
+*.iwuyou189.cn = server:222.246.129.80
+*.iwuyou189.com = server:222.246.129.80
+*.pzclub.cn = server:222.246.129.80
+*.szny189.com = server:222.246.129.80
+*.vnet.cn = server:222.246.129.80
+*.wuyou189.cn = server:222.246.129.80
+*.wuyou189.com = server:222.246.129.80
+*.ycy100.cn = server:222.246.129.80
+*.yichuangyun.com.cn = server:222.246.129.80
+
